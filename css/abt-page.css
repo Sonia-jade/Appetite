@@ -1,0 +1,69 @@
+.active {
+  color: var(--secondary);
+  border-bottom: 0.1rem solid var(--secondary);
+  padding-bottom: 0.5rem;
+}
+
+.abt {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.abt .text-wrapper {
+  text-align: center;
+}
+.abt .text-wrapper h1 {
+  font-size: 8rem;
+  font-family: "Poiret One", cursive;
+  color: var(--forth);
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.abt .abt-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overflow {
+  background-color: var(--primary);
+  height: 100%;
+  text-align: left;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: var(--forth);
+}
+
+.abt-img-2 {
+  height: 60vh;
+  width: 100%;
+  background: url("../images/pexels-engin-akyurt-1487511.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .active {
+    border-bottom: none;
+    padding-bottom: none;
+  }
+
+  .abt-img-2 {
+    height: 50vh;
+    width: 100%;
+    background: url("../images/pexels-engin-akyurt-1527603.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+/*# sourceMappingURL=abt-page.css.map */

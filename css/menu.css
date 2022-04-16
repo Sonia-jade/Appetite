@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.menu {
+  background-color: var(--five);
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  padding: 0.5rem;
+  padding-bottom: 5rem;
+}
+.menu .heading {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 3.5rem 0;
+  font-size: 4rem;
+  font-family: "Poiret One", cursive;
+}
+.menu .heading span {
+  color: var(--forth);
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  font-family: "Roboto", sans-serif;
+}
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  padding: 1rem;
+  margin: auto;
+  border: 0.1rem solid var(--forth);
+}
+.menu .box-container .box .content {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .box-container .box .tags {
+  padding: 1rem;
+}
+.menu .box-container .box .btn {
+  padding: 2.5rem 1rem 0rem 1rem;
+}
+.menu .box-container .box h4 {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.menu .box-container .box img {
+  height: 65%;
+  width: 100%;
+}
+.menu .box-container .box h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Poiret One", cursive;
+  text-transform: capitalize;
+  text-align: center;
+}
+.menu .box-container .box span {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.menu .box-container .box .price {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.menu .btn-2 {
+  display: none;
+}
+.menu .button {
+  padding: 11px 15px;
+  text-align: center;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 4px;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+.menu .button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.menu .button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.menu .button:hover span {
+  padding-right: 25px;
+}
+.menu .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (max-width: 450px) {
+  .menu .button {
+    display: none;
+  }
+  .menu .btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    text-align: center;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

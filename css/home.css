@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(25, 22, 22, 0.45), rgba(24, 21, 21, 0.55)), url("..//images/pexels-nataliya-vaitkevich-5794876.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+.home .content {
+  max-width: 60rem;
+  padding: 2rem;
+}
+.home .content h3 {
+  font-family: "Poiret One", cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+}
+.home .content p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1.5rem 0;
+  color: white;
+}
+.home .button {
+  padding: 7px 10px;
+  text-align: center;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.home .button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.home .button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.home .button:hover span {
+  padding-right: 25px;
+}
+.home .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.home .button-2 {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .button {
+    display: none;
+  }
+
+  .home {
+    background-image: linear-gradient(rgba(25, 22, 22, 0.45), rgba(24, 21, 21, 0.55)), url("..//images/pexels-nataliya-vaitkevich-5794883.jpg");
+  }
+  .home .button-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    text-align: center;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

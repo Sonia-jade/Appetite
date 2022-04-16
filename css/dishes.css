@@ -1,0 +1,89 @@
+.dishes {
+  background-color: var(--primary);
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  padding: 1rem;
+}
+.dishes .heading {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 3.5rem 0;
+  font-size: 4rem;
+  font-family: "Poiret One", cursive;
+}
+.dishes .heading span {
+  color: var(--forth);
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  font-family: "Roboto", sans-serif;
+}
+.dishes img {
+  height: 12rem;
+  margin: 1rem 0;
+}
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+.dishes .box-container .box {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--six);
+  text-align: center;
+  position: relative;
+}
+.dishes .box-container .box .fa-heart {
+  position: absolute;
+  background: var(--secondary);
+  top: 1.5rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  color: black;
+  right: 1.5rem;
+}
+.dishes .box-container .box .fa-eye {
+  position: absolute;
+  background: var(--secondary);
+  top: 1.5rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  color: black;
+  left: 1.5rem;
+}
+.dishes .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--primary);
+  font-family: "Poiret One", cursive;
+}
+.dishes .box-container .box span {
+  color: var(--primary);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+.dishes .box-container .box .btn-2 {
+  padding: 9px 12px;
+  text-align: center;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 4px;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+.dishes .box-container .box .stars {
+  padding: 1rem 0;
+}
+.dishes .box-container .box .stars i {
+  font-size: 1.7rem;
+  color: var(--secondary);
+}
+
+/*# sourceMappingURL=dishes.css.map */

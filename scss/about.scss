@@ -1,0 +1,105 @@
+.about{
+    background-color: var(--primary);
+    font-family: 'Roboto' , sans-serif;
+    padding-bottom: 7%;
+    padding: 3rem;
+    .heading{
+        text-align: center;
+        color: #fff;
+        text-transform:capitalize;
+        padding: 3.5rem 0;
+        font-size: 4rem;
+        font-family: 'Poiret One', cursive;
+        span{
+            color:var(--forth);
+            text-transform: capitalize;
+            font-size: 2.8rem;
+            font-family: 'Roboto' , sans-serif;
+        }
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background: var(--primary);
+        .image{
+            flex: 1 1 40rem;
+            padding: 2.5rem;
+            img{
+                width: 100%;
+            }
+        }
+    .content{
+        flex: 1 1 40rem;
+        padding: 1rem;
+        h3{
+            font-size: 3rem;
+            color: #fff;
+        }
+        p{
+            font-size: 1.2rem;
+            color: #ccc;
+            padding: 1rem 0;
+            line-height: 1.8;
+        }
+        .button{
+            padding: 7px 10px;
+            text-align: center;
+            background-color: var(--secondary);
+            color: #ffff;
+            border-radius: 4px;
+            transition: all 0.5s;
+            text-transform: capitalize;
+        }
+       
+          .button span {
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 25px;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+          .button-2{
+            display: none;
+        }
+    }
+}
+}
+
+@media(max-width:450px){
+    .button{
+      display: none;
+    }
+    .about{
+        padding: 0rem;
+        .row{
+            .content{
+                .button-2{
+                    display: inline-block;
+                    padding: 7px 10px;
+                    text-align: center;
+                    background-color: var(--secondary);
+                    color: #ffff;
+                    border-radius: 4px;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+  }
